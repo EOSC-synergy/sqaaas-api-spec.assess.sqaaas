@@ -1,0 +1,19 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: staging
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-api-spec:
+      branch: master
+      repo: https://github.com/eosc-synergy/sqaaas-api-spec
+environment:
+  JPL_KEEPGOING: true
+sqa_criteria:
+  QC.Lic:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-spec:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-cornflower-drever.sh
+        container: qc.lic_sleazy-eggplant-blue
+timeout: 600
