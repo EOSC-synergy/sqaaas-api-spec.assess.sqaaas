@@ -5,15 +5,31 @@ config:
       branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-api-spec:
-      branch: master
       repo: https://github.com/eosc-synergy/sqaaas-api-spec
 environment:
-  JPL_KEEPGOING: true
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-spec git:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-champagne-chinchilla.sh
+        container: qc.acc_snippy-auburn-mammoth
+  QC.Doc:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-spec find_readme.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cranky-champagne-armadillo.sh
+        container: qc.doc_breezy-mustard-woodpecker
+      github.com/eosc-synergy/sqaaas-api-spec markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.hilly-viridian-monkey.sh
+        container: qc.doc_lousy-peach-bracke
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-api-spec:
+      github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-cornflower-drever.sh
-        container: qc.lic_sleazy-eggplant-blue
+        - /usr/bin/env sh .sqa/script.messy-thistle-leopard.sh
+        container: qc.lic_blurry-turquoise-kudu
 timeout: 600
