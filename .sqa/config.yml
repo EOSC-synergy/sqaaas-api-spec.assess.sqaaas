@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: staging
+      branch: feature/filter_tools_by_repo_content
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-api-spec:
       repo: https://github.com/eosc-synergy/sqaaas-api-spec
@@ -14,22 +14,22 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-champagne-chinchilla.sh
-        container: qc.acc_snippy-auburn-mammoth
+        - /usr/bin/env sh .sqa/script.crappy-cardinal-capybara.sh
+        container: qc.acc_woozy-lavender-sparrow
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_readme.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-champagne-armadillo.sh
-        container: qc.doc_breezy-mustard-woodpecker
+        - /usr/bin/env sh .sqa/script.ready-ultramarine-crocodile.sh
+        container: qc.doc_homey-gamboge-armadillo
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-viridian-monkey.sh
-        container: qc.doc_lousy-peach-bracke
+        - /usr/bin/env sh .sqa/script.crappy-fuchsia-chinook.sh
+        container: qc.doc_ugly-denim-ladybird
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-thistle-leopard.sh
-        container: qc.lic_blurry-turquoise-kudu
+        - /usr/bin/env sh .sqa/script.zippy-cerise-beetle.sh
+        container: qc.lic_woozy-red-civet
 timeout: 600
