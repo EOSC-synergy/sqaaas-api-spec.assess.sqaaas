@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-salmon-hamster.sh
-        container: qc.acc_sunny-pumpkin-opossum
+        - /usr/bin/env sh .sqa/script.flabby-aqua-slug.sh
+        container: qc.acc_wheezy-olive-manatee
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-apricot-chicken.sh
-        container: qc.doc_jumpy-ultramarine-cassowary
+        - /usr/bin/env sh .sqa/script.gummy-platinum-budgerigar.sh
+        container: qc.doc_gamy-chocolate-opossum
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-heliotrope-gar.sh
-        container: qc.doc_frumpy-rose-wasp
+        - /usr/bin/env sh .sqa/script.homey-razzmatazz-hummingbird.sh
+        container: qc.doc_cozy-cerulean-shrew
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-thistle-cat.sh
-        container: qc.lic_squirrely-brown-bonobo
+        - /usr/bin/env sh .sqa/script.scummy-beige-harrier.sh
+        container: qc.lic_squirrely-copper-wallaby
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-carmine-ladybird.sh
-        container: qc.ver_scanty-green-tarsier
+        - /usr/bin/env sh .sqa/script.scaly-pumpkin-ocelot.sh
+        container: qc.ver_dorky-cyan-dogfish
 timeout: 600
