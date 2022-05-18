@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-aqua-slug.sh
-        container: qc.acc_wheezy-olive-manatee
+        - /usr/bin/env sh .sqa/script.wheezy-jade-russel.sh
+        container: qc.acc_stuffy-indigo-maltese
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-platinum-budgerigar.sh
-        container: qc.doc_gamy-chocolate-opossum
+        - /usr/bin/env sh .sqa/script.greasy-turquoise-tzu.sh
+        container: qc.doc_snazzy-malachite-ibis
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-razzmatazz-hummingbird.sh
-        container: qc.doc_cozy-cerulean-shrew
+        - /usr/bin/env sh .sqa/script.grumpy-zucchini-penguin.sh
+        container: qc.doc_bluesy-gold-budgerigar
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-beige-harrier.sh
-        container: qc.lic_squirrely-copper-wallaby
+        - /usr/bin/env sh .sqa/script.squirrely-vermilion-kingfisher.sh
+        container: qc.lic_gloppy-blue-argentino
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-pumpkin-ocelot.sh
-        container: qc.ver_dorky-cyan-dogfish
+        - /usr/bin/env sh .sqa/script.muzzy-vermilion-hyena.sh
+        container: qc.ver_homey-tan-badger
 timeout: 600
