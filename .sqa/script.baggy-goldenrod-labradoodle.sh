@@ -1,4 +1,4 @@
 (
 cd github.com/EOSC-synergy/sqaaas-api-spec &&
-    is_semver.py
+    get_git_tags.py
 )

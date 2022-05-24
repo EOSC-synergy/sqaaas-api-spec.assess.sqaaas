@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://github.com/EOSC-synergy/sqaaas-api-spec
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.6.0-alpha5
+      branch: 1.6.0-alpha8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-plum-russel.sh
-        container: qc.acc_bumpy-maroon-ant
+        - /usr/bin/env sh .sqa/script.bluesy-rose-vulture.sh
+        container: qc.acc_lousy-charcoal-hyrax
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-heliotrope-spaniel.sh
-        container: qc.doc_blurry-heliotrope-dunker
+        - /usr/bin/env sh .sqa/script.clammy-purple-harrier.sh
+        container: qc.doc_muggy-lavender-meerkat
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-violet-tang.sh
-        container: qc.doc_nippy-salmon-whale
+        - /usr/bin/env sh .sqa/script.ugly-khaki-bordeaux.sh
+        container: qc.doc_hazy-amaranth-tiger
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-tan-impala.sh
-        container: qc.lic_smelly-lime-hummingbird
+        - /usr/bin/env sh .sqa/script.homey-pink-uguisu.sh
+        container: qc.lic_flimsy-sepia-bison
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-api-spec is_semver.py:
+      github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-eggplant-squid.sh
-        container: qc.ver_sickly-cardinal-crab
+        - /usr/bin/env sh .sqa/script.baggy-goldenrod-labradoodle.sh
+        container: qc.ver_snoopy-indigo-mayfly
 timeout: 600
