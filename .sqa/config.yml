@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://github.com/EOSC-synergy/sqaaas-api-spec
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.6.0-alpha8
+      branch: 1.7.0-only_im_client
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,28 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-plum-whippet.sh
-        container: qc.acc_sloppy-pink-squirrel
+        - /usr/bin/env sh .sqa/script.zippy-orchid-maltese.sh
+        container: qc.acc_messy-salmon-dormouse
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-platinum-turkey.sh
-        container: qc.doc_skimpy-pumpkin-elephant
+        - /usr/bin/env sh .sqa/script.ready-tangerine-angelfish.sh
+        container: qc.doc_messy-bronze-bulldog
+      github.com/EOSC-synergy/sqaaas-api-spec git:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-violet-crocodile.sh
+        container: qc.doc_lovely-flax-dollar
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cinnamon-coyote.sh
-        container: qc.doc_homey-emerald-crocodile
+        - /usr/bin/env sh .sqa/script.thirsty-puce-turtle.sh
+        container: qc.doc_chummy-sapphire-loon
+  QC.FAIR:
+    repos:
+      github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-crimson-setter.sh
+        container: qc.fair_wiggy-mauve-chimpanzee
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-heliotrope-javanese.sh
-        container: qc.lic_seedy-magnolia-chinook
+        - /usr/bin/env sh .sqa/script.clammy-celadon-camel.sh
+        container: qc.lic_scaly-myrtle-malamute
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-flax-dogfish.sh
-        container: qc.ver_breezy-ultramarine-chin
-timeout: 600
+        - /usr/bin/env sh .sqa/script.flaky-aquamarine-zorse.sh
+        container: qc.ver_gloppy-malachite-liger
+timeout: 1800
