@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-api-spec:
-      branch: master
+      branch: feature/contribution_files
       repo: https://github.com/EOSC-synergy/sqaaas-api-spec
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: 1.7.0-only_im_client
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-orchid-maltese.sh
-        container: qc.acc_messy-salmon-dormouse
+        - /usr/bin/env sh .sqa/script.shaky-crimson-emu.sh
+        container: qc.acc_gummy-seashell-binturong
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-tangerine-angelfish.sh
-        container: qc.doc_messy-bronze-bulldog
+        - /usr/bin/env sh .sqa/script.flabby-magnolia-impala.sh
+        container: qc.doc_frumpy-bistre-flounder
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-violet-crocodile.sh
-        container: qc.doc_lovely-flax-dollar
+        - /usr/bin/env sh .sqa/script.shaggy-platinum-frog.sh
+        container: qc.doc_paltry-lemon-balinese
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-puce-turtle.sh
-        container: qc.doc_chummy-sapphire-loon
+        - /usr/bin/env sh .sqa/script.wiggy-rust-moose.sh
+        container: qc.doc_freaky-burgundy-penguin
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-crimson-setter.sh
-        container: qc.fair_wiggy-mauve-chimpanzee
+        - /usr/bin/env sh .sqa/script.snappy-cinnamon-raccoon.sh
+        container: qc.fair_flimsy-periwinkle-liger
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-celadon-camel.sh
-        container: qc.lic_scaly-myrtle-malamute
+        - /usr/bin/env sh .sqa/script.clammy-plum-dachsbracke.sh
+        container: qc.lic_sunny-charcoal-ocelot
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-aquamarine-zorse.sh
-        container: qc.ver_gloppy-malachite-liger
+        - /usr/bin/env sh .sqa/script.jumpy-olive-eagle.sh
+        container: qc.ver_foggy-amaranth-antelope
 timeout: 1800
