@@ -1,5 +1,5 @@
 services:
-  qc.acc_gummy-seashell-binturong:
+  qc.acc_shaggy-white-bullfrog:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,17 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_freaky-burgundy-penguin:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_frumpy-bistre-flounder:
+  qc.doc_fuzzy-cornflower-giraffe:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -27,7 +17,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_paltry-lemon-balinese:
+  qc.doc_nerdy-orange-beetle:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -35,14 +25,24 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.fair_flimsy-periwinkle-liger:
+  qc.doc_pretty-turquoise-rabbit:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
+      dockerfile: Dockerfile
+    command: sleep 6000000
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.fair_freaky-salmon-tiger:
     image: steinsteiny/fuji:latest
     volumes:
     - source: ./
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_sunny-charcoal-ocelot:
+  qc.lic_snazzy-magenta-tuatara:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -52,7 +52,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_foggy-amaranth-antelope:
+  qc.ver_gimpy-cardinal-snail:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
