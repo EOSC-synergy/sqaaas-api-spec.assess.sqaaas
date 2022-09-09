@@ -1,5 +1,5 @@
 services:
-  qc.acc_surly-yellow-budgerigar:
+  qc.acc_crabby-cerulean-gopher:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_cloudy-olive-dunker:
+  qc.doc_chummy-olive-mongoose:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -15,7 +15,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_flabby-crimson-raccoon:
+  qc.doc_flaky-bistre-monkey:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -25,7 +25,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_zippy-buff-akita:
+  qc.doc_leaky-linen-chihuahua:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -35,7 +35,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.fair_cloudy-amethyst-kingfisher:
+  qc.fair_cheeky-gamboge-starfish:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.FAIR
       dockerfile: Dockerfile-fuji
@@ -44,7 +44,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_scanty-cream-caracal:
+  qc.lic_gummy-gold-discus:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -54,7 +54,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_blurry-flax-heron:
+  qc.ver_droopy-lime-hedgehog:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
@@ -64,7 +64,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  svcqc.dep_chummy-azure-hornet:
+  svcqc.dep_wheezy-vermilion-moth:
     entrypoint:
     - /bin/sleep
     - infinity
