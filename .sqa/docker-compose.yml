@@ -1,5 +1,5 @@
 services:
-  qc.acc_shaggy-white-bullfrog:
+  qc.acc_snazzy-cardinal-anteater:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,17 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_fuzzy-cornflower-giraffe:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_nerdy-orange-beetle:
+  qc.doc_bumpy-dandelion-meerkat:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -25,7 +15,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_pretty-turquoise-rabbit:
+  qc.doc_cloudy-jade-bobcat:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -35,14 +25,26 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.fair_freaky-salmon-tiger:
-    image: steinsteiny/fuji:latest
+  qc.doc_gummy-plum-hummingbird:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
+      dockerfile: Dockerfile
+    command: sleep 6000000
     volumes:
     - source: ./
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_snazzy-magenta-tuatara:
+  qc.fair_gloppy-cornflower-bee:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.FAIR
+      dockerfile: Dockerfile-fuji
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.lic_ugly-turquoise-okapi:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -52,11 +54,26 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_gimpy-cardinal-snail:
+  qc.ver_leaky-plum-cheetah:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
     command: sleep 6000000
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  svcqc.dep_flabby-apricot-lionfish:
+    entrypoint:
+    - /bin/sleep
+    - infinity
+    environment:
+    - OPENSTACK_USER
+    - OPENSTACK_PASS
+    - IM_USER
+    - IM_PASS
+    image: grycap/im-client:ec3
     volumes:
     - source: ./
       target: /sqaaas-build
