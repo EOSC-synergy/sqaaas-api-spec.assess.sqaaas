@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-magenta-tortoise.sh
-        container: qc.acc_messy-mauve-bear
+        - /usr/bin/env sh .sqa/script.blurry-flax-mayfly.sh
+        container: qc.acc_sickly-buff-quoll
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-myrtle-donkey.sh
-        container: qc.doc_hilly-coral-bombay
+        - /usr/bin/env sh .sqa/script.scummy-apricot-swan.sh
+        container: qc.doc_baggy-rose-falcon
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-bistre-turkey.sh
-        container: qc.doc_pokey-fuchsia-akbash
+        - /usr/bin/env sh .sqa/script.sleepy-periwinkle-caracal.sh
+        container: qc.doc_cloudy-alizarin-albatross
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-lavender-okapi.sh
-        container: qc.doc_grumpy-coral-frigatebird
+        - /usr/bin/env sh .sqa/script.sleepy-azure-chamois.sh
+        container: qc.doc_ready-tangerine-tuatara
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-smalt-chicken.sh
-        container: qc.fair_lovely-crimson-anteater
+        - /usr/bin/env sh .sqa/script.frumpy-apricot-frise.sh
+        container: qc.fair_chummy-wheat-butterfly
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-silver-barb.sh
-        container: qc.lic_dorky-amethyst-dhole
+        - /usr/bin/env sh .sqa/script.chewy-orchid-yak.sh
+        container: qc.lic_slaphappy-ochre-hare
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-ivory-mayfly.sh
-        container: qc.ver_freaky-khaki-rhinoceros
+        - /usr/bin/env sh .sqa/script.homey-charcoal-spider.sh
+        container: qc.ver_baggy-rose-chin
 timeout: 1800
