@@ -24,44 +24,44 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-auburn-bison.sh
-        container: qc.acc_greasy-sapphire-spider
+        - /usr/bin/env sh .sqa/script.cranky-amaranth-mammoth.sh
+        container: qc.acc_foggy-russet-hornet
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-corn-greyhound.sh
-        container: qc.doc_breezy-firebrick-shrimp
+        - /usr/bin/env sh .sqa/script.zippy-tangerine-rattlesnake.sh
+        container: qc.doc_muzzy-azure-wolverine
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-zucchini-kangaroo.sh
-        container: qc.doc_gloppy-platinum-crocodile
+        - /usr/bin/env sh .sqa/script.trippy-mustard-caterpillar.sh
+        container: qc.doc_lousy-bronze-labradoodle
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-periwinkle-spitz.sh
-        container: qc.doc_scaly-teal-bulldog
+        - /usr/bin/env sh .sqa/script.crabby-platinum-lion.sh
+        container: qc.doc_homey-chartreuse-gorilla
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-turquoise-bee.sh
-        container: qc.fair_silly-amethyst-mammoth
+        - /usr/bin/env sh .sqa/script.droopy-blue-shark.sh
+        container: qc.fair_chewy-pink-sloth
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-aquamarine-fousek.sh
-        container: qc.lic_snippy-cyan-wasp
+        - /usr/bin/env sh .sqa/script.bumpy-aqua-insect.sh
+        container: qc.lic_stealthy-aqua-tapir
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-amber-termite.sh
-        container: qc.ver_seedy-violet-opossum
+        - /usr/bin/env sh .sqa/script.snappy-sepia-greyhound.sh
+        container: qc.ver_woolly-maroon-bird
   SvcQC.Dep:
     repos:
       github.com/orviz/IM-sqaaas-test im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-lemon-fox.sh
-        container: svcqc.dep_nerdy-thistle-indri
+        - /usr/bin/env sh .sqa/script.freaky-celadon-donkey.sh
+        container: svcqc.dep_snippy-periwinkle-bulldog
 timeout: 1800
