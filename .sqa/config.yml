@@ -1,11 +1,5 @@
 config:
-  credentials:
-  - id: upv_im_id
-    password_var: IM_PASS
-    username_var: IM_USER
-  - id: incd_openstack_id
-    password_var: OPENSTACK_PASS
-    username_var: OPENSTACK_USER
+  credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.0
@@ -13,9 +7,6 @@ config:
     github.com/eosc-synergy/sqaaas-api-spec:
       branch: master
       repo: https://github.com/eosc-synergy/sqaaas-api-spec
-    github.com/orviz/IM-sqaaas-test:
-      branch: master
-      repo: https://github.com/orviz/IM-sqaaas-test
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -24,44 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-viridian-zebra.sh
-        container: qc.acc_breezy-carmine-tang
+        - /usr/bin/env sh .sqa/script.cranky-azure-olm.sh
+        container: qc.acc_paltry-pumpkin-eel
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-lime-mongrel.sh
-        container: qc.doc_thirsty-brown-clam
+        - /usr/bin/env sh .sqa/script.skimpy-sepia-tuatara.sh
+        container: qc.doc_breezy-bistre-fox
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-ochre-badger.sh
-        container: qc.doc_gamy-bistre-woodpecker
+        - /usr/bin/env sh .sqa/script.surly-carmine-chin.sh
+        container: qc.doc_wiggy-seashell-malamute
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-tangerine-giraffe.sh
-        container: qc.doc_goopy-azure-kakapo
+        - /usr/bin/env sh .sqa/script.woozy-turquoise-fish.sh
+        container: qc.doc_breezy-jade-avocet
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-cardinal-eagle.sh
-        container: qc.fair_sickly-ruby-manatee
+        - /usr/bin/env sh .sqa/script.stealthy-orchid-rat.sh
+        container: qc.fair_pasty-lemon-seal
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-asparagus-gecko.sh
-        container: qc.lic_greasy-asparagus-bandicoot
+        - /usr/bin/env sh .sqa/script.thirsty-crimson-skunk.sh
+        container: qc.lic_seedy-smalt-panda
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-platinum-swan.sh
-        container: qc.ver_ready-sapphire-schnauzer
-  SvcQC.Dep:
-    repos:
-      github.com/orviz/IM-sqaaas-test im_client:
-        commands:
-        - /usr/bin/env sh .sqa/script.paltry-red-lobster.sh
-        container: svcqc.dep_woozy-emerald-eleuth
+        - /usr/bin/env sh .sqa/script.pretty-salmon-bombay.sh
+        container: qc.ver_wimpy-chocolate-armadillo
 timeout: 1800
