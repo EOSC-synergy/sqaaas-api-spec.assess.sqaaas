@@ -1,5 +1,11 @@
 config:
-  credentials: []
+  credentials:
+  - id: upv_im_id
+    password_var: IM_PASS
+    username_var: IM_USER
+  - id: incd_openstack_id
+    password_var: OPENSTACK_PASS
+    username_var: OPENSTACK_USER
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.0
@@ -7,6 +13,9 @@ config:
     github.com/eosc-synergy/sqaaas-api-spec:
       branch: master
       repo: https://github.com/eosc-synergy/sqaaas-api-spec
+    github.com/orviz/IM-sqaaas-test:
+      branch: master
+      repo: https://github.com/orviz/IM-sqaaas-test
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,38 +24,44 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-black-wasp.sh
-        container: qc.acc_tacky-ecru-mule
+        - /usr/bin/env sh .sqa/script.greasy-goldenrod-russel.sh
+        container: qc.acc_pasty-orchid-hyena
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-khaki-moth.sh
-        container: qc.doc_droopy-bistre-abyssinian
+        - /usr/bin/env sh .sqa/script.lousy-bistre-burmese.sh
+        container: qc.doc_stinky-beige-dogfish
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-denim-bloodhound.sh
-        container: qc.doc_stealthy-khaki-akbash
+        - /usr/bin/env sh .sqa/script.wheezy-platinum-wrasse.sh
+        container: qc.doc_skimpy-razzmatazz-markhor
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-chestnut-goose.sh
-        container: qc.doc_cheeky-wisteria-civet
+        - /usr/bin/env sh .sqa/script.pokey-plum-angelfish.sh
+        container: qc.doc_randy-emerald-rottweiler
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-bistre-cheetah.sh
-        container: qc.fair_wimpy-amber-vole
+        - /usr/bin/env sh .sqa/script.foggy-asparagus-dachsbracke.sh
+        container: qc.fair_cheeky-ultramarine-beaver
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-xanthic-devil.sh
-        container: qc.lic_chewy-zucchini-mist
+        - /usr/bin/env sh .sqa/script.lumpy-goldenrod-okapi.sh
+        container: qc.lic_blurry-firebrick-tang
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-lilac-turtle.sh
-        container: qc.ver_baggy-cobalt-wasp
+        - /usr/bin/env sh .sqa/script.breezy-denim-cattle.sh
+        container: qc.ver_zippy-harlequin-catfish
+  SvcQC.Dep:
+    repos:
+      github.com/orviz/IM-sqaaas-test im_client:
+        commands:
+        - /usr/bin/env sh .sqa/script.surly-wisteria-mastiff.sh
+        container: svcqc.dep_homey-russet-uguisu
 timeout: 1800
