@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-azure-olm.sh
-        container: qc.acc_paltry-pumpkin-eel
+        - /usr/bin/env sh .sqa/script.geeky-black-wasp.sh
+        container: qc.acc_tacky-ecru-mule
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-sepia-tuatara.sh
-        container: qc.doc_breezy-bistre-fox
+        - /usr/bin/env sh .sqa/script.queasy-khaki-moth.sh
+        container: qc.doc_droopy-bistre-abyssinian
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-carmine-chin.sh
-        container: qc.doc_wiggy-seashell-malamute
+        - /usr/bin/env sh .sqa/script.stealthy-denim-bloodhound.sh
+        container: qc.doc_stealthy-khaki-akbash
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-turquoise-fish.sh
-        container: qc.doc_breezy-jade-avocet
+        - /usr/bin/env sh .sqa/script.ugly-chestnut-goose.sh
+        container: qc.doc_cheeky-wisteria-civet
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-orchid-rat.sh
-        container: qc.fair_pasty-lemon-seal
+        - /usr/bin/env sh .sqa/script.tasty-bistre-cheetah.sh
+        container: qc.fair_wimpy-amber-vole
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-crimson-skunk.sh
-        container: qc.lic_seedy-smalt-panda
+        - /usr/bin/env sh .sqa/script.homely-xanthic-devil.sh
+        container: qc.lic_chewy-zucchini-mist
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-salmon-bombay.sh
-        container: qc.ver_wimpy-chocolate-armadillo
+        - /usr/bin/env sh .sqa/script.boozy-lilac-turtle.sh
+        container: qc.ver_baggy-cobalt-wasp
 timeout: 1800
