@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-bistre-avocet.sh
-        container: qc.acc_nerdy-asparagus-koala
+        - /usr/bin/env sh .sqa/script.snippy-magnolia-quoll.sh
+        container: qc.acc_muggy-puce-tiger
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-malachite-toad.sh
-        container: qc.doc_surly-brass-toucan
+        - /usr/bin/env sh .sqa/script.freaky-malachite-deer.sh
+        container: qc.doc_scanty-chartreuse-tang
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-cardinal-akbash.sh
-        container: qc.doc_cozy-azure-baboon
+        - /usr/bin/env sh .sqa/script.boozy-eggplant-penguin.sh
+        container: qc.doc_freaky-pumpkin-hound
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-russet-blue.sh
-        container: qc.doc_smelly-gold-wrasse
+        - /usr/bin/env sh .sqa/script.stinky-celadon-baboon.sh
+        container: qc.doc_grumpy-firebrick-oriole
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-copper-cockroach.sh
-        container: qc.fair_ugly-eggplant-ant
+        - /usr/bin/env sh .sqa/script.muggy-tan-wolverine.sh
+        container: qc.fair_slimy-asparagus-hyena
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-purple-mongrel.sh
-        container: qc.lic_flabby-apricot-giraffe
+        - /usr/bin/env sh .sqa/script.cozy-blue-woodpecker.sh
+        container: qc.lic_bumpy-orchid-buzzard
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-cinnamon-mastiff.sh
-        container: qc.ver_woozy-charcoal-spitz
+        - /usr/bin/env sh .sqa/script.hilly-grey-seal.sh
+        container: qc.ver_gamy-persimmon-swan
 timeout: 1800
