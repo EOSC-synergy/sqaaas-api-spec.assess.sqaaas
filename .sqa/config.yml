@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-sepia-toad.sh
-        container: qc.acc_slimy-corn-starfish
+        - /usr/bin/env sh .sqa/script.flimsy-bistre-avocet.sh
+        container: qc.acc_nerdy-asparagus-koala
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-jade-toad.sh
-        container: qc.doc_ready-peach-zebra
+        - /usr/bin/env sh .sqa/script.ready-malachite-toad.sh
+        container: qc.doc_surly-brass-toucan
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-orchid-macaw.sh
-        container: qc.doc_scanty-smalt-antelope
+        - /usr/bin/env sh .sqa/script.pasty-cardinal-akbash.sh
+        container: qc.doc_cozy-azure-baboon
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-wheat-emu.sh
-        container: qc.doc_trippy-russet-spider
+        - /usr/bin/env sh .sqa/script.sloppy-russet-blue.sh
+        container: qc.doc_smelly-gold-wrasse
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-gold-cow.sh
-        container: qc.fair_cloudy-saffron-malamute
+        - /usr/bin/env sh .sqa/script.squeaky-copper-cockroach.sh
+        container: qc.fair_ugly-eggplant-ant
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-saffron-peccary.sh
-        container: qc.lic_flaky-teal-jaguar
+        - /usr/bin/env sh .sqa/script.lanky-purple-mongrel.sh
+        container: qc.lic_flabby-apricot-giraffe
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-peach-mammoth.sh
-        container: qc.ver_snappy-orchid-tang
+        - /usr/bin/env sh .sqa/script.woolly-cinnamon-mastiff.sh
+        container: qc.ver_woozy-charcoal-spitz
 timeout: 1800
