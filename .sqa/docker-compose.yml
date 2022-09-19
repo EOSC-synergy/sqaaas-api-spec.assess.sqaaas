@@ -1,5 +1,5 @@
 services:
-  qc.acc_gimpy-taupe-dachsbracke:
+  qc.acc_pasty-silver-uakari:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_surly-seashell-wombat:
+  qc.doc_hasty-mustard-duck:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -15,7 +15,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_tasty-chartreuse-okapi:
+  qc.doc_queasy-xanthic-clam:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -25,7 +25,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_ugly-sapphire-weasel:
+  qc.doc_stealthy-heliotrope-quetzal:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -35,14 +35,14 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.fair_hazy-heliotrope-pig:
+  qc.fair_woolly-champagne-eel:
     image: steinsteiny/fuji:latest
     volumes:
     - source: ./
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_cozy-purple-spaniel:
+  qc.lic_flaky-lemon-malamute:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -52,26 +52,11 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_cozy-amethyst-spoonbill:
+  qc.ver_shaggy-denim-yak:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
     command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  svcqc.dep_chummy-persimmon-giraffe:
-    entrypoint:
-    - /bin/sleep
-    - infinity
-    environment:
-    - OPENSTACK_USER
-    - OPENSTACK_PASS
-    - IM_USER
-    - IM_PASS
-    image: grycap/im-client:ec3
     volumes:
     - source: ./
       target: /sqaaas-build
