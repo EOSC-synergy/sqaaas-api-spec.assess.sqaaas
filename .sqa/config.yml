@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-cinnamon-frog.sh
-        container: qc.acc_shabby-red-okapi
+        - /usr/bin/env sh .sqa/script.sloppy-salmon-moose.sh
+        container: qc.acc_homely-denim-lionfish
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-violet-worm.sh
-        container: qc.doc_scaly-cinnamon-dhole
+        - /usr/bin/env sh .sqa/script.wimpy-silver-termite.sh
+        container: qc.doc_snappy-auburn-dormouse
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-linen-abyssinian.sh
-        container: qc.doc_slaphappy-saffron-horse
+        - /usr/bin/env sh .sqa/script.skinny-tomato-civet.sh
+        container: qc.doc_slimy-myrtle-elephant
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-gold-jackal.sh
-        container: qc.doc_messy-olivine-squirrel
+        - /usr/bin/env sh .sqa/script.pokey-ruby-bear.sh
+        container: qc.doc_muzzy-carmine-rhinoceros
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-zucchini-sheep.sh
-        container: qc.fair_squirrely-ivory-bracke
+        - /usr/bin/env sh .sqa/script.trippy-sangria-anteater.sh
+        container: qc.fair_chewy-amber-earwig
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-sangria-lobster.sh
-        container: qc.lic_skinny-platinum-harrier
+        - /usr/bin/env sh .sqa/script.snappy-ultramarine-raccoon.sh
+        container: qc.lic_lousy-ecru-fox
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-ochre-quokka.sh
-        container: qc.ver_trippy-buff-chow
+        - /usr/bin/env sh .sqa/script.ready-red-spider.sh
+        container: qc.ver_gummy-alizarin-okapi
 timeout: 1800
