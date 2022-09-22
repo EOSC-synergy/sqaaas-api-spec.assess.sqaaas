@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-grey-elephant.sh
-        container: qc.acc_shabby-orchid-panda
+        - /usr/bin/env sh .sqa/script.droopy-denim-grasshopper.sh
+        container: qc.acc_dorky-gold-avocet
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-rose-crane.sh
-        container: qc.doc_tasty-wheat-greyhound
+        - /usr/bin/env sh .sqa/script.flimsy-red-albatross.sh
+        container: qc.doc_ugly-heliotrope-dugong
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-magenta-woodlouse.sh
-        container: qc.doc_baggy-viridian-deer
+        - /usr/bin/env sh .sqa/script.flimsy-sepia-iguana.sh
+        container: qc.doc_smelly-brown-quokka
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-silver-numbat.sh
-        container: qc.doc_thirsty-champagne-lemur
+        - /usr/bin/env sh .sqa/script.beady-fuchsia-dragon.sh
+        container: qc.doc_flimsy-jade-liger
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-cyan-hound.sh
-        container: qc.fair_stealthy-grey-frise
+        - /usr/bin/env sh .sqa/script.queasy-magnolia-forest.sh
+        container: qc.fair_goopy-chartreuse-markhor
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-black-manatee.sh
-        container: qc.lic_wimpy-khaki-antelope
+        - /usr/bin/env sh .sqa/script.geeky-violet-sheep.sh
+        container: qc.lic_greasy-chartreuse-albatross
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-malachite-reindeer.sh
-        container: qc.ver_blurry-asparagus-magpie
+        - /usr/bin/env sh .sqa/script.bumpy-maroon-abyssinian.sh
+        container: qc.ver_gloppy-brass-binturong
 timeout: 1800
