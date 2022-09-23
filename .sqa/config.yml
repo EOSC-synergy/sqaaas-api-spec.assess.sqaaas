@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-magnolia-albatross.sh
-        container: qc.acc_stinky-denim-collie
+        - /usr/bin/env sh .sqa/script.smelly-ochre-squid.sh
+        container: qc.acc_ugly-cobalt-clam
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-flax-stoat.sh
-        container: qc.doc_frumpy-fuchsia-peccary
+        - /usr/bin/env sh .sqa/script.thirsty-copper-seahorse.sh
+        container: qc.doc_gloppy-viridian-corgi
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-khaki-caracal.sh
-        container: qc.doc_slaphappy-cobalt-wasp
+        - /usr/bin/env sh .sqa/script.lovely-lime-swan.sh
+        container: qc.doc_stuffy-thistle-hedgehog
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-wheat-hummingbird.sh
-        container: qc.doc_silly-lime-lemur
+        - /usr/bin/env sh .sqa/script.hazy-ecru-kudu.sh
+        container: qc.doc_crabby-taupe-whippet
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-asparagus-flounder.sh
-        container: qc.fair_shaky-platinum-beagle
+        - /usr/bin/env sh .sqa/script.sleazy-olive-ostrich.sh
+        container: qc.fair_squirrely-tan-wolf
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-jade-dingo.sh
-        container: qc.lic_gummy-pear-capuchin
+        - /usr/bin/env sh .sqa/script.homey-indigo-elephant.sh
+        container: qc.lic_silly-gold-dragon
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-azure-retriever.sh
-        container: qc.ver_skanky-firebrick-olm
+        - /usr/bin/env sh .sqa/script.messy-copper-collie.sh
+        container: qc.ver_shaggy-auburn-avocet
 timeout: 1800
