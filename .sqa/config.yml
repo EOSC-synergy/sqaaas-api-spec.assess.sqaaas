@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-green-beetle.sh
-        container: qc.acc_freaky-ochre-frise
+        - /usr/bin/env sh .sqa/script.breezy-cinnamon-dormouse.sh
+        container: qc.acc_geeky-zucchini-harrier
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-harlequin-zonkey.sh
-        container: qc.doc_sickly-jade-millipede
+        - /usr/bin/env sh .sqa/script.thirsty-purple-hedgehog.sh
+        container: qc.doc_snazzy-celadon-tetra
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-turquoise-chameleon.sh
-        container: qc.doc_chewy-lime-setter
+        - /usr/bin/env sh .sqa/script.cranky-pumpkin-termite.sh
+        container: qc.doc_surly-platinum-dunker
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-fuchsia-corgi.sh
-        container: qc.doc_flaky-smalt-dragonfly
+        - /usr/bin/env sh .sqa/script.nippy-tangerine-uguisu.sh
+        container: qc.doc_lovely-razzmatazz-dragonfly
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-champagne-nightingale.sh
-        container: qc.fair_sunny-salmon-tiger
+        - /usr/bin/env sh .sqa/script.nippy-blue-impala.sh
+        container: qc.fair_greasy-cinnabar-ragdoll
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-indigo-zonkey.sh
-        container: qc.lic_breezy-emerald-pinscher
+        - /usr/bin/env sh .sqa/script.squeaky-tan-bobcat.sh
+        container: qc.lic_lumpy-tomato-yak
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-rose-bee.sh
-        container: qc.ver_shabby-alizarin-lobster
+        - /usr/bin/env sh .sqa/script.scaly-silver-snake.sh
+        container: qc.ver_sleazy-smalt-duck
 timeout: 1800
