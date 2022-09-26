@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-cinnabar-seahorse.sh
-        container: qc.acc_frumpy-plum-badger
+        - /usr/bin/env sh .sqa/script.skinny-maroon-iguana.sh
+        container: qc.acc_sloppy-dandelion-nightingale
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-olive-newfoundland.sh
-        container: qc.doc_stuffy-crimson-ray
+        - /usr/bin/env sh .sqa/script.wiggy-cerulean-olm.sh
+        container: qc.doc_surly-rose-devil
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-carmine-rabbit.sh
-        container: qc.doc_crappy-bronze-horse
+        - /usr/bin/env sh .sqa/script.blurry-sangria-sponge.sh
+        container: qc.doc_sleazy-burgundy-fly
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-khaki-cougar.sh
-        container: qc.doc_crabby-pink-quoll
+        - /usr/bin/env sh .sqa/script.bluesy-scarlet-meerkat.sh
+        container: qc.doc_chewy-auburn-forest
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-auburn-zebu.sh
-        container: qc.fair_baggy-ultramarine-rhinoceros
+        - /usr/bin/env sh .sqa/script.grumpy-aqua-rattlesnake.sh
+        container: qc.fair_whiny-cinnamon-kudu
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-cerulean-chicken.sh
-        container: qc.lic_wheezy-gamboge-worm
+        - /usr/bin/env sh .sqa/script.craggy-cyan-foxhound.sh
+        container: qc.lic_crabby-crimson-dragonfly
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-pink-yak.sh
-        container: qc.ver_nippy-goldenrod-oyster
+        - /usr/bin/env sh .sqa/script.chewy-rust-cichlid.sh
+        container: qc.ver_seedy-amaranth-kakapo
 timeout: 1800
