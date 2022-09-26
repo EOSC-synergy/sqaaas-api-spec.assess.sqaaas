@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-maroon-iguana.sh
-        container: qc.acc_sloppy-dandelion-nightingale
+        - /usr/bin/env sh .sqa/script.homely-cinnamon-quoll.sh
+        container: qc.acc_ugly-ecru-tzu
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-cerulean-olm.sh
-        container: qc.doc_surly-rose-devil
+        - /usr/bin/env sh .sqa/script.foggy-salmon-mastiff.sh
+        container: qc.doc_snazzy-purple-flounder
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-sangria-sponge.sh
-        container: qc.doc_sleazy-burgundy-fly
+        - /usr/bin/env sh .sqa/script.gamy-carmine-dane.sh
+        container: qc.doc_gimpy-coral-rattlesnake
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-scarlet-meerkat.sh
-        container: qc.doc_chewy-auburn-forest
+        - /usr/bin/env sh .sqa/script.craggy-rust-boar.sh
+        container: qc.doc_tacky-chestnut-antelope
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-aqua-rattlesnake.sh
-        container: qc.fair_whiny-cinnamon-kudu
+        - /usr/bin/env sh .sqa/script.snoopy-puce-dormouse.sh
+        container: qc.fair_jumpy-rust-warthog
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-cyan-foxhound.sh
-        container: qc.lic_crabby-crimson-dragonfly
+        - /usr/bin/env sh .sqa/script.scanty-cobalt-dodo.sh
+        container: qc.lic_pretty-plum-gopher
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-rust-cichlid.sh
-        container: qc.ver_seedy-amaranth-kakapo
+        - /usr/bin/env sh .sqa/script.homely-taupe-bobcat.sh
+        container: qc.ver_scanty-linen-cichlid
 timeout: 1800
