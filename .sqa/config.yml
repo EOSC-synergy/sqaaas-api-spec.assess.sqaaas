@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-chocolate-shark.sh
-        container: qc.acc_chummy-bronze-butterfly
+        - /usr/bin/env sh .sqa/script.stuffy-grey-earwig.sh
+        container: qc.acc_wheezy-rust-eel
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-brown-gecko.sh
-        container: qc.doc_foggy-dandelion-bordeaux
+        - /usr/bin/env sh .sqa/script.squirrely-cornflower-wolfhound.sh
+        container: qc.doc_gimpy-fuchsia-dane
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-tan-fox.sh
-        container: qc.doc_crappy-red-devil
+        - /usr/bin/env sh .sqa/script.frumpy-brown-hare.sh
+        container: qc.doc_dorky-zucchini-bird
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-linen-markhor.sh
-        container: qc.doc_shaky-mustard-manatee
+        - /usr/bin/env sh .sqa/script.droopy-azure-dugong.sh
+        container: qc.doc_gamy-ruby-kangaroo
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-asparagus-chow.sh
-        container: qc.fair_gimpy-alizarin-javanese
+        - /usr/bin/env sh .sqa/script.hazy-platinum-eagle.sh
+        container: qc.fair_muzzy-flax-serval
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-goldenrod-discus.sh
-        container: qc.lic_sleepy-lime-armadillo
+        - /usr/bin/env sh .sqa/script.dorky-chestnut-booby.sh
+        container: qc.lic_randy-aqua-vulture
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-myrtle-gar.sh
-        container: qc.ver_randy-platinum-loon
+        - /usr/bin/env sh .sqa/script.skimpy-apricot-yak.sh
+        container: qc.ver_nippy-puce-mongoose
 timeout: 1800
