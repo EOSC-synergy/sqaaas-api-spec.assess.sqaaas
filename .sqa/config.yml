@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cinnamon-crocodile.sh
-        container: qc.acc_skinny-mauve-wallaby
+        - /usr/bin/env sh .sqa/script.cozy-chocolate-shark.sh
+        container: qc.acc_chummy-bronze-butterfly
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-violet-iguana.sh
-        container: qc.doc_gloppy-razzmatazz-jellyfish
+        - /usr/bin/env sh .sqa/script.chewy-brown-gecko.sh
+        container: qc.doc_foggy-dandelion-bordeaux
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-aquamarine-bear.sh
-        container: qc.doc_ready-lime-monkey
+        - /usr/bin/env sh .sqa/script.pokey-tan-fox.sh
+        container: qc.doc_crappy-red-devil
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-sangria-binturong.sh
-        container: qc.doc_sloppy-linen-dragonfly
+        - /usr/bin/env sh .sqa/script.boozy-linen-markhor.sh
+        container: qc.doc_shaky-mustard-manatee
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-maroon-manatee.sh
-        container: qc.fair_muzzy-bronze-spaniel
+        - /usr/bin/env sh .sqa/script.gloppy-asparagus-chow.sh
+        container: qc.fair_gimpy-alizarin-javanese
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-cream-badger.sh
-        container: qc.lic_gloppy-xanthic-squirt
+        - /usr/bin/env sh .sqa/script.fuzzy-goldenrod-discus.sh
+        container: qc.lic_sleepy-lime-armadillo
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-jade-mammoth.sh
-        container: qc.ver_stinky-lemon-macaw
+        - /usr/bin/env sh .sqa/script.slimy-myrtle-gar.sh
+        container: qc.ver_randy-platinum-loon
 timeout: 1800
