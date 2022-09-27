@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cinnamon-quoll.sh
-        container: qc.acc_ugly-ecru-tzu
+        - /usr/bin/env sh .sqa/script.whiny-violet-hyena.sh
+        container: qc.acc_lanky-fuchsia-boar
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-salmon-mastiff.sh
-        container: qc.doc_snazzy-purple-flounder
+        - /usr/bin/env sh .sqa/script.scaly-zucchini-affenpinscher.sh
+        container: qc.doc_lanky-puce-lionfish
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-carmine-dane.sh
-        container: qc.doc_gimpy-coral-rattlesnake
+        - /usr/bin/env sh .sqa/script.cozy-crimson-bullfrog.sh
+        container: qc.doc_hilly-magenta-sheep
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-rust-boar.sh
-        container: qc.doc_tacky-chestnut-antelope
+        - /usr/bin/env sh .sqa/script.slaphappy-viridian-lion.sh
+        container: qc.doc_leaky-xanthic-lemming
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-puce-dormouse.sh
-        container: qc.fair_jumpy-rust-warthog
+        - /usr/bin/env sh .sqa/script.snippy-goldenrod-goose.sh
+        container: qc.fair_queasy-fuchsia-tang
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cobalt-dodo.sh
-        container: qc.lic_pretty-plum-gopher
+        - /usr/bin/env sh .sqa/script.lumpy-sapphire-mandrill.sh
+        container: qc.lic_ugly-coral-wombat
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-taupe-bobcat.sh
-        container: qc.ver_scanty-linen-cichlid
+        - /usr/bin/env sh .sqa/script.boozy-yellow-weasel.sh
+        container: qc.ver_freaky-cerulean-salamander
 timeout: 1800
