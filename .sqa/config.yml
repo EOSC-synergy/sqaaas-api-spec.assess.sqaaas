@@ -15,38 +15,32 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-grey-earwig.sh
-        container: qc.acc_wheezy-rust-eel
+        - /usr/bin/env sh .sqa/script.squirrely-celadon-dugong.sh
+        container: qc.acc_crabby-thistle-panda
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-cornflower-wolfhound.sh
-        container: qc.doc_gimpy-fuchsia-dane
+        - /usr/bin/env sh .sqa/script.ready-gold-tortoise.sh
+        container: qc.doc_snippy-green-horse
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-brown-hare.sh
-        container: qc.doc_dorky-zucchini-bird
+        - /usr/bin/env sh .sqa/script.droopy-white-tetra.sh
+        container: qc.doc_sunny-cyan-badger
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-azure-dugong.sh
-        container: qc.doc_gamy-ruby-kangaroo
-  QC.FAIR:
-    repos:
-      github.com/EOSC-synergy/sqaaas-api-spec F-UJI:
-        commands:
-        - /usr/bin/env sh .sqa/script.hazy-platinum-eagle.sh
-        container: qc.fair_muzzy-flax-serval
+        - /usr/bin/env sh .sqa/script.snippy-silver-markhor.sh
+        container: qc.doc_craggy-cardinal-cockroach
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-chestnut-booby.sh
-        container: qc.lic_randy-aqua-vulture
+        - /usr/bin/env sh .sqa/script.grumpy-celadon-rhinoceros.sh
+        container: qc.lic_sickly-teal-penguin
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-apricot-yak.sh
-        container: qc.ver_nippy-puce-mongoose
+        - /usr/bin/env sh .sqa/script.skimpy-scarlet-albatross.sh
+        container: qc.ver_pasty-magenta-schnauzer
 timeout: 1800
