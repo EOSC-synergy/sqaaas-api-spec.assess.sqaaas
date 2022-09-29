@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-white-uguisu.sh
-        container: qc.acc_flaky-chestnut-cuttlefish
+        - /usr/bin/env sh .sqa/script.trippy-myrtle-fish.sh
+        container: qc.acc_lovely-orange-bordeaux
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-salmon-pinscher.sh
-        container: qc.doc_fuzzy-thistle-seal
+        - /usr/bin/env sh .sqa/script.crabby-goldenrod-pig.sh
+        container: qc.doc_beady-silver-catfish
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-crimson-quoll.sh
-        container: qc.doc_ready-green-civet
+        - /usr/bin/env sh .sqa/script.woolly-turquoise-abyssinian.sh
+        container: qc.doc_nerdy-amethyst-beetle
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cobalt-angelfish.sh
-        container: qc.doc_bumpy-salmon-dolphin
+        - /usr/bin/env sh .sqa/script.zippy-teal-mongrel.sh
+        container: qc.doc_freaky-russet-lemming
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-celadon-booby.sh
-        container: qc.lic_woolly-myrtle-serval
+        - /usr/bin/env sh .sqa/script.stuffy-scarlet-bat.sh
+        container: qc.lic_sloppy-cerise-anteater
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-mauve-newfoundland.sh
-        container: qc.ver_gamy-saffron-toucan
+        - /usr/bin/env sh .sqa/script.geeky-cream-boar.sh
+        container: qc.ver_smelly-sepia-schnauzer
 timeout: 1800
