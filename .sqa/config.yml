@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-maroon-swan.sh
-        container: qc.acc_wheezy-lemon-akita
+        - /usr/bin/env sh .sqa/script.droopy-cerulean-llama.sh
+        container: qc.acc_flabby-wheat-tang
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-buff-cheetah.sh
-        container: qc.doc_wheezy-pear-stingray
+        - /usr/bin/env sh .sqa/script.nerdy-amethyst-kiwi.sh
+        container: qc.doc_muzzy-azure-dachshund
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-linen-wildebeest.sh
-        container: qc.doc_skinny-wisteria-retriever
+        - /usr/bin/env sh .sqa/script.wimpy-cinnamon-orangutan.sh
+        container: qc.doc_squirrely-vermilion-centipede
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-xanthic-chameleon.sh
-        container: qc.doc_snappy-malachite-ibis
+        - /usr/bin/env sh .sqa/script.crappy-maroon-grouse.sh
+        container: qc.doc_breezy-white-dunker
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-malachite-terrier.sh
-        container: qc.lic_seedy-pumpkin-camel
+        - /usr/bin/env sh .sqa/script.gummy-razzmatazz-seal.sh
+        container: qc.lic_slaphappy-wisteria-hound
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-cerulean-gorilla.sh
-        container: qc.sec_skanky-sapphire-penguin
+        - /usr/bin/env sh .sqa/script.gimpy-blue-baboon.sh
+        container: qc.sec_randy-gamboge-buffalo
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-lavender-wasp.sh
-        container: qc.ver_gimpy-razzmatazz-cichlid
+        - /usr/bin/env sh .sqa/script.smelly-magenta-gopher.sh
+        container: qc.ver_woolly-cerise-caracal
 timeout: 1800
