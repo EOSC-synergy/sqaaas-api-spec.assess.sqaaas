@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-indigo-mist.sh
-        container: qc.acc_wiggy-seashell-setter
+        - /usr/bin/env sh .sqa/script.chummy-denim-devil.sh
+        container: qc.acc_squeaky-ruby-hedgehog
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-lavender-beagle.sh
-        container: qc.doc_paltry-cyan-bat
+        - /usr/bin/env sh .sqa/script.skinny-blue-chicken.sh
+        container: qc.doc_muggy-buff-dalmatian
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-burgundy-rhinoceros.sh
-        container: qc.doc_freaky-teal-gar
+        - /usr/bin/env sh .sqa/script.clammy-peach-fly.sh
+        container: qc.doc_freaky-bronze-woodlouse
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-ecru-elephant.sh
-        container: qc.doc_gamy-yellow-abyssinian
+        - /usr/bin/env sh .sqa/script.dorky-periwinkle-sloth.sh
+        container: qc.doc_snoopy-ivory-serval
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-purple-civet.sh
-        container: qc.lic_lanky-brass-dingo
+        - /usr/bin/env sh .sqa/script.squeaky-sepia-mole.sh
+        container: qc.lic_leaky-corn-vole
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-olivine-rat.sh
-        container: qc.sty_lanky-chocolate-barracuda
+        - /usr/bin/env sh .sqa/script.sleepy-salmon-gar.sh
+        container: qc.sty_tasty-indigo-uakari
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-plum-camel.sh
-        container: qc.ver_squirrely-sapphire-chameleon
+        - /usr/bin/env sh .sqa/script.lousy-amaranth-fossa.sh
+        container: qc.ver_snippy-rust-badger
 timeout: 5400
