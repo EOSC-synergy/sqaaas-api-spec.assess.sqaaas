@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-salmon-jellyfish.sh
-        container: qc.acc_sleepy-tomato-paradise
+        - /usr/bin/env sh .sqa/script.cheeky-gold-bandicoot.sh
+        container: qc.acc_pokey-orange-macaque
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-gold-javanese.sh
-        container: qc.doc_geeky-cerise-wrasse
+        - /usr/bin/env sh .sqa/script.hilly-azure-macaw.sh
+        container: qc.doc_snappy-magenta-fish
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-tan-beaver.sh
-        container: qc.doc_hilly-heliotrope-turtle
+        - /usr/bin/env sh .sqa/script.crabby-charcoal-binturong.sh
+        container: qc.doc_lanky-ecru-mist
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-brass-oriole.sh
-        container: qc.doc_surly-cream-coral
+        - /usr/bin/env sh .sqa/script.dorky-linen-caiman.sh
+        container: qc.doc_wiggy-sangria-clam
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-coral-mist.sh
-        container: qc.lic_gimpy-blue-badger
+        - /usr/bin/env sh .sqa/script.sloppy-viridian-spoonbill.sh
+        container: qc.lic_fuzzy-cerise-antelope
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-xanthic-chameleon.sh
-        container: qc.sty_snippy-xanthic-molly
+        - /usr/bin/env sh .sqa/script.snappy-myrtle-wallaby.sh
+        container: qc.sty_lumpy-salmon-cougar
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-purple-lion.sh
-        container: qc.ver_snappy-denim-turtle
+        - /usr/bin/env sh .sqa/script.queasy-cream-dragon.sh
+        container: qc.ver_gummy-aquamarine-mongoose
 timeout: 5400
