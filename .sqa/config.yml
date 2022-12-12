@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-gold-bandicoot.sh
-        container: qc.acc_pokey-orange-macaque
+        - /usr/bin/env sh .sqa/script.zippy-harlequin-catfish.sh
+        container: qc.acc_seedy-purple-dragon
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-azure-macaw.sh
-        container: qc.doc_snappy-magenta-fish
+        - /usr/bin/env sh .sqa/script.homely-ochre-weasel.sh
+        container: qc.doc_wiggy-olivine-mayfly
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-charcoal-binturong.sh
-        container: qc.doc_lanky-ecru-mist
+        - /usr/bin/env sh .sqa/script.chummy-rose-crane.sh
+        container: qc.doc_squeaky-harlequin-barracuda
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-linen-caiman.sh
-        container: qc.doc_wiggy-sangria-clam
+        - /usr/bin/env sh .sqa/script.stinky-lemon-mouse.sh
+        container: qc.doc_homely-thistle-corgi
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-viridian-spoonbill.sh
-        container: qc.lic_fuzzy-cerise-antelope
+        - /usr/bin/env sh .sqa/script.cranky-asparagus-echidna.sh
+        container: qc.lic_silly-vermilion-bear
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-myrtle-wallaby.sh
-        container: qc.sty_lumpy-salmon-cougar
+        - /usr/bin/env sh .sqa/script.freaky-green-vole.sh
+        container: qc.sty_zippy-gamboge-fossa
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-cream-dragon.sh
-        container: qc.ver_gummy-aquamarine-mongoose
+        - /usr/bin/env sh .sqa/script.flabby-sepia-panda.sh
+        container: qc.ver_paltry-amethyst-chameleon
 timeout: 5400
