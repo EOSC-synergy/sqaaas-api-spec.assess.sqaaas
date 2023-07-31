@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-lime-uakari.sh
-        container: qc.acc_snappy-razzmatazz-tarantula
+        - /usr/bin/env sh .sqa/script.jumpy-sepia-hyena.sh
+        container: qc.acc_stinky-corn-lionfish
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-purple-tang.sh
-        container: qc.doc_woolly-cyan-eel
+        - /usr/bin/env sh .sqa/script.bumpy-burgundy-horse.sh
+        container: qc.doc_breezy-cerise-raccoon
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-thistle-cat.sh
-        container: qc.doc_lanky-bistre-uakari
+        - /usr/bin/env sh .sqa/script.woolly-lilac-saola.sh
+        container: qc.doc_ready-cream-ferret
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-wheat-alligator.sh
-        container: qc.doc_skinny-persimmon-wallaby
+        - /usr/bin/env sh .sqa/script.tasty-amber-molly.sh
+        container: qc.doc_stuffy-heliotrope-schnauzer
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-sepia-barracuda.sh
-        container: qc.lic_boozy-rose-harrier
+        - /usr/bin/env sh .sqa/script.hilly-brass-coati.sh
+        container: qc.lic_stinky-cornflower-warthog
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-mustard-chin.sh
-        container: qc.sty_clammy-lavender-balinese
+        - /usr/bin/env sh .sqa/script.pasty-chartreuse-dog.sh
+        container: qc.sty_nippy-mustard-quokka
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-tangerine-anteater.sh
-        container: qc.ver_cloudy-peach-frise
+        - /usr/bin/env sh .sqa/script.cozy-linen-molly.sh
+        container: qc.ver_scummy-cream-bracke
 timeout: 5400
