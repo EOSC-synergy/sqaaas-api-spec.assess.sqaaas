@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cobalt-ray.sh
-        container: qc.acc_stinky-lavender-bat
+        - /usr/bin/env sh .sqa/script.trippy-brass-koala.sh
+        container: qc.acc_gamy-crimson-wallaby
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-mustard-mastiff.sh
-        container: qc.doc_greasy-brass-cassowary
+        - /usr/bin/env sh .sqa/script.baggy-champagne-flounder.sh
+        container: qc.doc_sleepy-harlequin-squirrel
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-maroon-sponge.sh
-        container: qc.doc_shabby-persimmon-otter
+        - /usr/bin/env sh .sqa/script.scummy-linen-ocelot.sh
+        container: qc.doc_grumpy-fuchsia-crocodile
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-mustard-audemer.sh
-        container: qc.doc_tacky-cinnamon-hyrax
+        - /usr/bin/env sh .sqa/script.sunny-jade-gerbil.sh
+        container: qc.doc_sleepy-peach-ibis
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-burgundy-donkey.sh
-        container: qc.lic_shaky-coral-armadillo
+        - /usr/bin/env sh .sqa/script.snippy-violet-moose.sh
+        container: qc.lic_paltry-teal-ocelot
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-beige-chinook.sh
-        container: qc.sty_homey-orange-cow
+        - /usr/bin/env sh .sqa/script.breezy-black-gorilla.sh
+        container: qc.sty_pokey-silver-hummingbird
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chestnut-donkey.sh
-        container: qc.ver_droopy-champagne-eagle
+        - /usr/bin/env sh .sqa/script.randy-chocolate-mist.sh
+        container: qc.ver_tasty-orchid-otter
 timeout: 5400
