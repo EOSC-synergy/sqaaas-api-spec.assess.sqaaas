@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-charcoal-squid.sh
-        container: qc.acc_cranky-silver-barb
+        - /usr/bin/env sh .sqa/script.gummy-white-earwig.sh
+        container: qc.acc_slimy-myrtle-mist
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-champagne-pinscher.sh
-        container: qc.doc_gummy-gold-numbat
+        - /usr/bin/env sh .sqa/script.blurry-white-clam.sh
+        container: qc.doc_wiggy-pink-centipede
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-denim-tiger.sh
-        container: qc.doc_skimpy-jade-dog
+        - /usr/bin/env sh .sqa/script.hilly-dandelion-gar.sh
+        container: qc.doc_greasy-charcoal-frigatebird
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-razzmatazz-dhole.sh
-        container: qc.doc_slaphappy-vermilion-sheep
+        - /usr/bin/env sh .sqa/script.woolly-pumpkin-hornet.sh
+        container: qc.doc_sloppy-chestnut-maltese
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-wheat-chicken.sh
-        container: qc.lic_lovely-tomato-tuatara
+        - /usr/bin/env sh .sqa/script.foggy-fuchsia-labradoodle.sh
+        container: qc.lic_lousy-sangria-kudu
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-black-orangutan.sh
-        container: qc.sty_dorky-mustard-ostrich
+        - /usr/bin/env sh .sqa/script.craggy-malachite-setter.sh
+        container: qc.sty_shaggy-lavender-budgerigar
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-rust-chihuahua.sh
-        container: qc.ver_crappy-puce-ragdoll
+        - /usr/bin/env sh .sqa/script.droopy-xanthic-stoat.sh
+        container: qc.ver_cozy-amethyst-moose
 timeout: 5400
