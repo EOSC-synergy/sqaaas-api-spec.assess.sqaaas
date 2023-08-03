@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cornflower-koala.sh
-        container: qc.acc_hazy-razzmatazz-barb
+        - /usr/bin/env sh .sqa/script.pasty-periwinkle-harrier.sh
+        container: qc.acc_shaggy-peach-octopus
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-flax-barnacle.sh
-        container: qc.doc_cozy-silver-maltese
+        - /usr/bin/env sh .sqa/script.bluesy-tomato-snail.sh
+        container: qc.doc_queasy-bronze-starfish
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-vermilion-squirt.sh
-        container: qc.doc_tacky-platinum-raccoon
+        - /usr/bin/env sh .sqa/script.blurry-apricot-tapir.sh
+        container: qc.doc_craggy-emerald-scorpion
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-cinnabar-jackal.sh
-        container: qc.doc_gummy-linen-toad
+        - /usr/bin/env sh .sqa/script.grumpy-pumpkin-boar.sh
+        container: qc.doc_pasty-cyan-ladybird
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-smalt-lemming.sh
-        container: qc.lic_ugly-plum-chimpanzee
+        - /usr/bin/env sh .sqa/script.hilly-ochre-crocodile.sh
+        container: qc.lic_thirsty-flax-newfoundland
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-flax-peccary.sh
-        container: qc.sty_chewy-ruby-discus
+        - /usr/bin/env sh .sqa/script.boozy-firebrick-rabbit.sh
+        container: qc.sty_paltry-amaranth-kudu
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-gamboge-macaque.sh
-        container: qc.ver_queasy-olivine-iguana
+        - /usr/bin/env sh .sqa/script.chewy-maroon-coral.sh
+        container: qc.ver_sickly-bistre-horse
 timeout: 5400
