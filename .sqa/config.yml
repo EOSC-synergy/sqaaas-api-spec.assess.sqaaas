@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-peach-gerbil.sh
-        container: qc.acc_tasty-dandelion-owl
+        - /usr/bin/env sh .sqa/script.nippy-zucchini-bongo.sh
+        container: qc.acc_sleepy-olivine-ibis
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-pumpkin-eagle.sh
-        container: qc.doc_squeaky-cream-devil
+        - /usr/bin/env sh .sqa/script.wiggy-amaranth-vulture.sh
+        container: qc.doc_stinky-lemon-dhole
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-pumpkin-barb.sh
-        container: qc.doc_silly-ecru-ant
+        - /usr/bin/env sh .sqa/script.lousy-bronze-coyote.sh
+        container: qc.doc_frumpy-orchid-toad
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-buff-abyssinian.sh
-        container: qc.doc_muzzy-scarlet-mayfly
+        - /usr/bin/env sh .sqa/script.scanty-cornflower-grouse.sh
+        container: qc.doc_woolly-chartreuse-gibbon
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-coral-turkey.sh
-        container: qc.lic_dorky-amethyst-dolphin
+        - /usr/bin/env sh .sqa/script.seedy-lavender-baboon.sh
+        container: qc.lic_sunny-cardinal-beaver
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-chestnut-whale.sh
-        container: qc.sty_thirsty-coral-frigatebird
+        - /usr/bin/env sh .sqa/script.surly-amethyst-starfish.sh
+        container: qc.sty_skanky-chestnut-bison
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-heliotrope-stingray.sh
-        container: qc.ver_flaky-olive-bandicoot
+        - /usr/bin/env sh .sqa/script.messy-taupe-husky.sh
+        container: qc.ver_homely-carmine-akbash
 timeout: 5400
