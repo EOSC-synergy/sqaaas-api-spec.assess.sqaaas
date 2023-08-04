@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-maroon-walrus.sh
-        container: qc.acc_fuzzy-periwinkle-anteater
+        - /usr/bin/env sh .sqa/script.slaphappy-cerise-caracal.sh
+        container: qc.acc_snoopy-auburn-spoonbill
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-bistre-hedgehog.sh
-        container: qc.doc_blurry-scarlet-abyssinian
+        - /usr/bin/env sh .sqa/script.crappy-orange-whippet.sh
+        container: qc.doc_cranky-olive-serval
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-myrtle-bloodhound.sh
-        container: qc.doc_chewy-wheat-lemming
+        - /usr/bin/env sh .sqa/script.skimpy-dandelion-binturong.sh
+        container: qc.doc_sickly-purple-bat
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-khaki-wildebeest.sh
-        container: qc.doc_skinny-pink-mole
+        - /usr/bin/env sh .sqa/script.queasy-brass-booby.sh
+        container: qc.doc_cranky-mustard-frog
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-cobalt-vulture.sh
-        container: qc.lic_sleepy-tan-kiwi
+        - /usr/bin/env sh .sqa/script.pokey-lavender-cichlid.sh
+        container: qc.lic_stinky-maroon-schnauzer
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-ruby-macaque.sh
-        container: qc.sty_silly-lime-cat
+        - /usr/bin/env sh .sqa/script.squeaky-harlequin-dormouse.sh
+        container: qc.sty_scaly-platinum-maltese
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-russet-squirt.sh
-        container: qc.ver_ready-salmon-moth
+        - /usr/bin/env sh .sqa/script.gimpy-sapphire-tarsier.sh
+        container: qc.ver_pasty-scarlet-insect
 timeout: 5400
