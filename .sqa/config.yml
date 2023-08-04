@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-cerise-caracal.sh
-        container: qc.acc_snoopy-auburn-spoonbill
+        - /usr/bin/env sh .sqa/script.queasy-magnolia-chipmunk.sh
+        container: qc.acc_thirsty-tangerine-olm
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-orange-whippet.sh
-        container: qc.doc_cranky-olive-serval
+        - /usr/bin/env sh .sqa/script.queasy-sapphire-chinook.sh
+        container: qc.doc_lovely-ultramarine-ant
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-dandelion-binturong.sh
-        container: qc.doc_sickly-purple-bat
+        - /usr/bin/env sh .sqa/script.muggy-buff-bear.sh
+        container: qc.doc_droopy-ecru-quokka
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-brass-booby.sh
-        container: qc.doc_cranky-mustard-frog
+        - /usr/bin/env sh .sqa/script.gamy-xanthic-lion.sh
+        container: qc.doc_bumpy-heliotrope-hyena
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-lavender-cichlid.sh
-        container: qc.lic_stinky-maroon-schnauzer
+        - /usr/bin/env sh .sqa/script.skanky-ecru-cow.sh
+        container: qc.lic_scaly-yellow-spoonbill
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-harlequin-dormouse.sh
-        container: qc.sty_scaly-platinum-maltese
+        - /usr/bin/env sh .sqa/script.goopy-tomato-lynx.sh
+        container: qc.sty_cranky-red-wrasse
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-sapphire-tarsier.sh
-        container: qc.ver_pasty-scarlet-insect
+        - /usr/bin/env sh .sqa/script.hasty-cornflower-hare.sh
+        container: qc.ver_stealthy-aquamarine-gharial
 timeout: 5400
