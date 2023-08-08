@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-magnolia-chipmunk.sh
-        container: qc.acc_thirsty-tangerine-olm
+        - /usr/bin/env sh .sqa/script.woolly-myrtle-dog.sh
+        container: qc.acc_snoopy-pear-bobcat
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-sapphire-chinook.sh
-        container: qc.doc_lovely-ultramarine-ant
+        - /usr/bin/env sh .sqa/script.bumpy-brass-clam.sh
+        container: qc.doc_stuffy-salmon-chin
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-buff-bear.sh
-        container: qc.doc_droopy-ecru-quokka
+        - /usr/bin/env sh .sqa/script.fuzzy-chestnut-tiger.sh
+        container: qc.doc_wheezy-thistle-whale
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-xanthic-lion.sh
-        container: qc.doc_bumpy-heliotrope-hyena
+        - /usr/bin/env sh .sqa/script.grumpy-ultramarine-corgi.sh
+        container: qc.doc_queasy-sapphire-grouse
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-ecru-cow.sh
-        container: qc.lic_scaly-yellow-spoonbill
+        - /usr/bin/env sh .sqa/script.wimpy-periwinkle-wrasse.sh
+        container: qc.lic_silly-sangria-numbat
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-tomato-lynx.sh
-        container: qc.sty_cranky-red-wrasse
+        - /usr/bin/env sh .sqa/script.queasy-rose-axolotl.sh
+        container: qc.sty_skinny-celadon-beetle
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-cornflower-hare.sh
-        container: qc.ver_stealthy-aquamarine-gharial
+        - /usr/bin/env sh .sqa/script.woozy-amber-hound.sh
+        container: qc.ver_wimpy-amber-akita
 timeout: 5400
