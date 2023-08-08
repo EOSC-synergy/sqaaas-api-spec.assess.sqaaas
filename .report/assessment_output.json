@@ -1556,22 +1556,22 @@
                 }
             },
             "data": {
-                "entityId": "_aL6DSxBQs6yyR9OZUNY7g",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/_aL6DSxBQs6yyR9OZUNY7g",
-                "createdAt": "2023-08-08T08:44:35.432495Z",
+                "entityId": "C80iPXzDRbirxL1bHkPHJQ",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/C80iPXzDRbirxL1bHkPHJQ",
+                "createdAt": "2023-08-08T08:45:21.541603Z",
                 "createdBy": "e3h49VVbQRKQphuAAmxpgQ",
                 "badgeclass": "KPF5hRehQlGa6_Zvdm3YEA",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/KPF5hRehQlGa6_Zvdm3YEA",
                 "issuer": "WdYZfeM0TAq2LP1VS3ljUw",
-                "image": "https://api.eu.badgr.io/public/assertions/_aL6DSxBQs6yyR9OZUNY7g/image",
+                "image": "https://api.eu.badgr.io/public/assertions/C80iPXzDRbirxL1bHkPHJQ/image",
                 "recipient": {
-                    "identity": "sha256$6ffed7a47c1d732e75619ba5afb3b79a8806d6f3ea97c9f523358278183c6cf5",
+                    "identity": "sha256$e8c3caf4bf1c4ca8b967cb242435bda9e740679c42a16a8e92f4d591ffb1ee08",
                     "hashed": true,
                     "type": "url",
-                    "salt": "3ba84c31a63648eb87a93d29e0944f9a",
+                    "salt": "e10e1c0079eb4598b11d604f99f9c508",
                     "plaintextIdentity": "https://github.com/eosc-synergy/sqaaas-api-spec"
                 },
-                "issuedOn": "2023-08-08T08:44:34.616984Z",
+                "issuedOn": "2023-08-08T08:45:20.679349Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/eosc-synergy/sqaaas-api-spec (commit: b2e793496b1b414a28bcf20afdc94a3af3c37ae3, branch/tag: master)",
                 "evidence": [
                     {
@@ -1595,11 +1595,11 @@
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/KPF5hRehQlGa6_Zvdm3YEA"
                 },
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/_aL6DSxBQs6yyR9OZUNY7g"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/C80iPXzDRbirxL1bHkPHJQ"
                 }
             },
-            "share": "<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/_aL6DSxBQs6yyR9OZUNY7g?identity__url=https%3A//github.com/EOSC-synergy/sqaaas-api-spec.assess.sqaaas/commit/860682287b55370c85852f2a4af00bd827c49315\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/_aL6DSxBQs6yyR9OZUNY7g/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2F_aL6DSxBQs6yyR9OZUNY7g?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F860682287b55370c85852f2a4af00bd827c49315&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F860682287b55370c85852f2a4af00bd827c49315"
+            "share": "<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/C80iPXzDRbirxL1bHkPHJQ?identity__url=https%3A//github.com/EOSC-synergy/sqaaas-api-spec.assess.sqaaas/commit/860682287b55370c85852f2a4af00bd827c49315\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/C80iPXzDRbirxL1bHkPHJQ/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FC80iPXzDRbirxL1bHkPHJQ?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F860682287b55370c85852f2a4af00bd827c49315&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F860682287b55370c85852f2a4af00bd827c49315"
         }
     }
 }
