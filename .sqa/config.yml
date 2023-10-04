@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-myrtle-dog.sh
-        container: qc.acc_snoopy-pear-bobcat
+        - /usr/bin/env sh .sqa/script.cloudy-turquoise-quoll.sh
+        container: qc.acc_gummy-ruby-terrier
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-brass-clam.sh
-        container: qc.doc_stuffy-salmon-chin
+        - /usr/bin/env sh .sqa/script.woolly-teal-tiger.sh
+        container: qc.doc_baggy-viridian-swan
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-chestnut-tiger.sh
-        container: qc.doc_wheezy-thistle-whale
+        - /usr/bin/env sh .sqa/script.skimpy-silver-vole.sh
+        container: qc.doc_cheeky-flax-affenpinscher
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-ultramarine-corgi.sh
-        container: qc.doc_queasy-sapphire-grouse
+        - /usr/bin/env sh .sqa/script.snippy-cerulean-octopus.sh
+        container: qc.doc_sloppy-maroon-opossum
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-periwinkle-wrasse.sh
-        container: qc.lic_silly-sangria-numbat
+        - /usr/bin/env sh .sqa/script.chummy-ecru-bonobo.sh
+        container: qc.lic_bumpy-pink-chin
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-rose-axolotl.sh
-        container: qc.sty_skinny-celadon-beetle
+        - /usr/bin/env sh .sqa/script.gloppy-aquamarine-bee.sh
+        container: qc.sty_nippy-viridian-woodlouse
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-amber-hound.sh
-        container: qc.ver_wimpy-amber-akita
+        - /usr/bin/env sh .sqa/script.nippy-ecru-wallaby.sh
+        container: qc.ver_cheeky-emerald-gorilla
 timeout: 5400
