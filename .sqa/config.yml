@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-eggplant-sparrow.sh
-        container: qc.acc_nippy-ruby-moose
+        - /usr/bin/env sh .sqa/script.skanky-corn-mayfly.sh
+        container: qc.acc_squirrely-magnolia-tamarin
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-cinnamon-fousek.sh
-        container: qc.doc_zippy-carmine-ferret
+        - /usr/bin/env sh .sqa/script.pokey-lemon-caiman.sh
+        container: qc.doc_ugly-silver-crane
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-cinnamon-greyhound.sh
-        container: qc.doc_smelly-beige-leopard
+        - /usr/bin/env sh .sqa/script.sickly-ultramarine-insect.sh
+        container: qc.doc_greasy-gold-spitz
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-magnolia-birman.sh
-        container: qc.doc_zippy-crimson-cow
+        - /usr/bin/env sh .sqa/script.leaky-cardinal-axolotl.sh
+        container: qc.doc_flabby-ecru-burmese
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-plum-frise.sh
-        container: qc.lic_shaggy-cerulean-ostrich
+        - /usr/bin/env sh .sqa/script.squeaky-gamboge-skunk.sh
+        container: qc.lic_muzzy-auburn-bat
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-cobalt-nightingale.sh
-        container: qc.sty_chummy-corn-duck
+        - /usr/bin/env sh .sqa/script.woozy-eggplant-reindeer.sh
+        container: qc.sty_nippy-cardinal-gecko
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-lemon-quoll.sh
-        container: qc.ver_homey-orange-spitz
+        - /usr/bin/env sh .sqa/script.beady-brass-shrew.sh
+        container: qc.ver_wimpy-cardinal-wolf
 timeout: 5400
