@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-coral-tortoise.sh
-        container: qc.acc_lumpy-magnolia-frise
+        - /usr/bin/env sh .sqa/script.grumpy-harlequin-serval.sh
+        container: qc.acc_nippy-turquoise-budgerigar
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-maroon-flamingo.sh
-        container: qc.doc_snoopy-green-argentino
+        - /usr/bin/env sh .sqa/script.zippy-alizarin-serval.sh
+        container: qc.doc_queasy-olivine-booby
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-salmon-audemer.sh
-        container: qc.doc_shaky-flax-sheep
+        - /usr/bin/env sh .sqa/script.snazzy-azure-owl.sh
+        container: qc.doc_paltry-taupe-cattle
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-harlequin-greyhound.sh
-        container: qc.doc_snappy-fuchsia-tortoise
+        - /usr/bin/env sh .sqa/script.pretty-white-heron.sh
+        container: qc.doc_tacky-sepia-tetra
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-rose-macaw.sh
-        container: qc.lic_squirrely-brown-capuchin
+        - /usr/bin/env sh .sqa/script.baggy-magnolia-leopard.sh
+        container: qc.lic_seedy-olivine-grasshopper
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-cerulean-robin.sh
-        container: qc.sty_slaphappy-puce-oyster
+        - /usr/bin/env sh .sqa/script.woozy-chestnut-moorhen.sh
+        container: qc.sty_chewy-celadon-lionfish
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-ecru-moose.sh
-        container: qc.ver_muggy-brown-orangutan
+        - /usr/bin/env sh .sqa/script.smelly-flax-macaque.sh
+        container: qc.ver_fuzzy-scarlet-dormouse
 timeout: 5400
