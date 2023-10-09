@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-corn-mayfly.sh
-        container: qc.acc_squirrely-magnolia-tamarin
+        - /usr/bin/env sh .sqa/script.foggy-teal-affenpinscher.sh
+        container: qc.acc_muzzy-periwinkle-cattle
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-lemon-caiman.sh
-        container: qc.doc_ugly-silver-crane
+        - /usr/bin/env sh .sqa/script.queasy-olive-caracal.sh
+        container: qc.doc_ugly-cream-discus
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-ultramarine-insect.sh
-        container: qc.doc_greasy-gold-spitz
+        - /usr/bin/env sh .sqa/script.flabby-rust-woodlouse.sh
+        container: qc.doc_gimpy-cardinal-panda
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-cardinal-axolotl.sh
-        container: qc.doc_flabby-ecru-burmese
+        - /usr/bin/env sh .sqa/script.muzzy-sangria-grasshopper.sh
+        container: qc.doc_woolly-olivine-drever
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-gamboge-skunk.sh
-        container: qc.lic_muzzy-auburn-bat
+        - /usr/bin/env sh .sqa/script.gummy-cobalt-rat.sh
+        container: qc.lic_frumpy-turquoise-wombat
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-eggplant-reindeer.sh
-        container: qc.sty_nippy-cardinal-gecko
+        - /usr/bin/env sh .sqa/script.silly-olive-indri.sh
+        container: qc.sty_hazy-ochre-kangaroo
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-brass-shrew.sh
-        container: qc.ver_wimpy-cardinal-wolf
+        - /usr/bin/env sh .sqa/script.scaly-cornflower-ostrich.sh
+        container: qc.ver_chewy-pumpkin-toad
 timeout: 5400
