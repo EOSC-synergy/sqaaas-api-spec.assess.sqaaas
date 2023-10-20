@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-apricot-kiwi.sh
-        container: qc.acc_blurry-eggplant-gar
+        - /usr/bin/env sh .sqa/script.lumpy-olive-fowl.sh
+        container: qc.acc_seedy-olive-butterfly
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-russet-guppy.sh
-        container: qc.doc_gloppy-lemon-eagle
+        - /usr/bin/env sh .sqa/script.craggy-jade-bobcat.sh
+        container: qc.doc_skimpy-orchid-cuscus
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-pear-sheepdog.sh
-        container: qc.doc_frumpy-auburn-blue
+        - /usr/bin/env sh .sqa/script.homey-black-capuchin.sh
+        container: qc.doc_boozy-brown-mule
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-cinnabar-dragon.sh
-        container: qc.doc_craggy-mauve-fousek
+        - /usr/bin/env sh .sqa/script.pokey-smalt-seahorse.sh
+        container: qc.doc_wheezy-wisteria-mongoose
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-lemon-chin.sh
-        container: qc.lic_stinky-teal-ray
+        - /usr/bin/env sh .sqa/script.thirsty-pink-buzzard.sh
+        container: qc.lic_hasty-auburn-eagle
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-cinnamon-chamois.sh
-        container: qc.sty_silly-burgundy-capybara
+        - /usr/bin/env sh .sqa/script.snoopy-pear-neanderthal.sh
+        container: qc.sty_hasty-olivine-lobster
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-celadon-frigatebird.sh
-        container: qc.ver_flaky-smalt-armadillo
+        - /usr/bin/env sh .sqa/script.lousy-sangria-eleuth.sh
+        container: qc.ver_cheeky-aqua-dalmatian
 timeout: 5400
