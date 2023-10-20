@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-amaranth-chinook.sh
-        container: qc.acc_lumpy-orange-rabbit
+        - /usr/bin/env sh .sqa/script.fuzzy-fuchsia-buzzard.sh
+        container: qc.acc_stealthy-jade-wombat
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-cornflower-lion.sh
-        container: qc.doc_tacky-purple-eagle
+        - /usr/bin/env sh .sqa/script.gloppy-rose-fossa.sh
+        container: qc.doc_zippy-firebrick-dragon
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-maroon-butterfly.sh
-        container: qc.doc_cheeky-burgundy-opossum
+        - /usr/bin/env sh .sqa/script.lovely-white-catfish.sh
+        container: qc.doc_shaggy-alizarin-zebu
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-apricot-spitz.sh
-        container: qc.doc_thirsty-pear-hedgehog
+        - /usr/bin/env sh .sqa/script.wimpy-myrtle-magpie.sh
+        container: qc.doc_bluesy-jade-kakapo
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-lemon-mayfly.sh
-        container: qc.lic_pretty-coral-markhor
+        - /usr/bin/env sh .sqa/script.squirrely-amaranth-lion.sh
+        container: qc.lic_gloppy-pumpkin-tang
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-tangerine-sloth.sh
-        container: qc.sty_baggy-asparagus-akbash
+        - /usr/bin/env sh .sqa/script.scaly-bronze-russel.sh
+        container: qc.sty_thirsty-malachite-rottweiler
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-emerald-gar.sh
-        container: qc.ver_tasty-cinnamon-crane
+        - /usr/bin/env sh .sqa/script.sickly-salmon-bonobo.sh
+        container: qc.ver_dorky-yellow-wasp
 timeout: 5400
