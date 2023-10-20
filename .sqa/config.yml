@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-rose-dog.sh
-        container: qc.acc_leaky-sepia-bombay
+        - /usr/bin/env sh .sqa/script.skinny-fuchsia-indri.sh
+        container: qc.acc_slimy-crimson-gharial
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-rust-hamster.sh
-        container: qc.doc_cranky-denim-jaguar
+        - /usr/bin/env sh .sqa/script.whiny-dandelion-argentino.sh
+        container: qc.doc_pretty-green-dachsbracke
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-indigo-macaw.sh
-        container: qc.doc_sickly-yellow-audemer
+        - /usr/bin/env sh .sqa/script.scaly-cardinal-lizard.sh
+        container: qc.doc_scanty-saffron-gar
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-brass-chipmunk.sh
-        container: qc.doc_randy-cinnabar-vole
+        - /usr/bin/env sh .sqa/script.lanky-aquamarine-cockroach.sh
+        container: qc.doc_bluesy-champagne-newt
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-saffron-vole.sh
-        container: qc.lic_beady-scarlet-spider
+        - /usr/bin/env sh .sqa/script.goopy-ultramarine-cuttlefish.sh
+        container: qc.lic_lanky-buff-liger
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-taupe-tang.sh
-        container: qc.sty_clammy-firebrick-dogfish
+        - /usr/bin/env sh .sqa/script.pasty-mustard-ferret.sh
+        container: qc.sty_pretty-champagne-pig
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-vermilion-millipede.sh
-        container: qc.ver_fuzzy-cerulean-indri
+        - /usr/bin/env sh .sqa/script.gimpy-aqua-cattle.sh
+        container: qc.ver_skimpy-platinum-mule
 timeout: 5400
