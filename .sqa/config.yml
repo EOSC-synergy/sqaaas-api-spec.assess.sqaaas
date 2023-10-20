@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-red-ray.sh
-        container: qc.acc_scaly-tomato-rat
+        - /usr/bin/env sh .sqa/script.muzzy-gamboge-stingray.sh
+        container: qc.acc_flimsy-gold-mongrel
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-russet-vole.sh
-        container: qc.doc_shabby-lilac-pig
+        - /usr/bin/env sh .sqa/script.clammy-carmine-rat.sh
+        container: qc.doc_scaly-azure-vole
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-pink-dachshund.sh
-        container: qc.doc_skanky-lavender-stingray
+        - /usr/bin/env sh .sqa/script.flaky-orange-woodlouse.sh
+        container: qc.doc_cozy-fuchsia-havanese
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-wisteria-affenpinscher.sh
-        container: qc.doc_smelly-cerulean-ocelot
+        - /usr/bin/env sh .sqa/script.freaky-olivine-spaniel.sh
+        container: qc.doc_lovely-ruby-bandicoot
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-olivine-foxhound.sh
-        container: qc.lic_scanty-ecru-elephant
+        - /usr/bin/env sh .sqa/script.scaly-puce-javanese.sh
+        container: qc.lic_homey-jade-lemur
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-mauve-grasshopper.sh
-        container: qc.sty_crappy-linen-starfish
+        - /usr/bin/env sh .sqa/script.goopy-gold-duck.sh
+        container: qc.sty_frumpy-jade-buzzard
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-taupe-sheepdog.sh
-        container: qc.ver_sleazy-bistre-iguana
+        - /usr/bin/env sh .sqa/script.squeaky-lavender-albatross.sh
+        container: qc.ver_sleepy-razzmatazz-zebra
 timeout: 5400
