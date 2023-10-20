@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-chartreuse-chamois.sh
-        container: qc.acc_hasty-ivory-tzu
+        - /usr/bin/env sh .sqa/script.squeaky-red-ray.sh
+        container: qc.acc_scaly-tomato-rat
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-jade-giraffe.sh
-        container: qc.doc_gimpy-dandelion-bombay
+        - /usr/bin/env sh .sqa/script.pokey-russet-vole.sh
+        container: qc.doc_shabby-lilac-pig
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-amber-elephant.sh
-        container: qc.doc_dorky-pink-zebra
+        - /usr/bin/env sh .sqa/script.slimy-pink-dachshund.sh
+        container: qc.doc_skanky-lavender-stingray
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-puce-chinchilla.sh
-        container: qc.doc_sloppy-cerise-avocet
+        - /usr/bin/env sh .sqa/script.skimpy-wisteria-affenpinscher.sh
+        container: qc.doc_smelly-cerulean-ocelot
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-lavender-bear.sh
-        container: qc.lic_bumpy-wisteria-seahorse
+        - /usr/bin/env sh .sqa/script.messy-olivine-foxhound.sh
+        container: qc.lic_scanty-ecru-elephant
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-mauve-macaw.sh
-        container: qc.sty_bluesy-turquoise-nightingale
+        - /usr/bin/env sh .sqa/script.smelly-mauve-grasshopper.sh
+        container: qc.sty_crappy-linen-starfish
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-aquamarine-dragonfly.sh
-        container: qc.ver_thirsty-corn-harrier
+        - /usr/bin/env sh .sqa/script.beady-taupe-sheepdog.sh
+        container: qc.ver_sleazy-bistre-iguana
 timeout: 5400
