@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-fuchsia-indri.sh
-        container: qc.acc_slimy-crimson-gharial
+        - /usr/bin/env sh .sqa/script.bluesy-blue-hedgehog.sh
+        container: qc.acc_thirsty-saffron-squid
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-dandelion-argentino.sh
-        container: qc.doc_pretty-green-dachsbracke
+        - /usr/bin/env sh .sqa/script.woolly-buff-centipede.sh
+        container: qc.doc_greasy-lavender-wolfhound
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cardinal-lizard.sh
-        container: qc.doc_scanty-saffron-gar
+        - /usr/bin/env sh .sqa/script.whiny-thistle-sloth.sh
+        container: qc.doc_gloppy-chocolate-toad
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-aquamarine-cockroach.sh
-        container: qc.doc_bluesy-champagne-newt
+        - /usr/bin/env sh .sqa/script.trippy-pumpkin-husky.sh
+        container: qc.doc_sloppy-eggplant-rhinoceros
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-ultramarine-cuttlefish.sh
-        container: qc.lic_lanky-buff-liger
+        - /usr/bin/env sh .sqa/script.homey-eggplant-pinscher.sh
+        container: qc.lic_flimsy-scarlet-hound
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-mustard-ferret.sh
-        container: qc.sty_pretty-champagne-pig
+        - /usr/bin/env sh .sqa/script.randy-chestnut-foxhound.sh
+        container: qc.sty_squeaky-amaranth-chihuahua
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-aqua-cattle.sh
-        container: qc.ver_skimpy-platinum-mule
+        - /usr/bin/env sh .sqa/script.randy-cream-cuscus.sh
+        container: qc.ver_skanky-cinnamon-llama
 timeout: 5400
