@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-olive-fowl.sh
-        container: qc.acc_seedy-olive-butterfly
+        - /usr/bin/env sh .sqa/script.tasty-chartreuse-chamois.sh
+        container: qc.acc_hasty-ivory-tzu
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-jade-bobcat.sh
-        container: qc.doc_skimpy-orchid-cuscus
+        - /usr/bin/env sh .sqa/script.muggy-jade-giraffe.sh
+        container: qc.doc_gimpy-dandelion-bombay
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-black-capuchin.sh
-        container: qc.doc_boozy-brown-mule
+        - /usr/bin/env sh .sqa/script.bluesy-amber-elephant.sh
+        container: qc.doc_dorky-pink-zebra
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-smalt-seahorse.sh
-        container: qc.doc_wheezy-wisteria-mongoose
+        - /usr/bin/env sh .sqa/script.hilly-puce-chinchilla.sh
+        container: qc.doc_sloppy-cerise-avocet
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-pink-buzzard.sh
-        container: qc.lic_hasty-auburn-eagle
+        - /usr/bin/env sh .sqa/script.gloppy-lavender-bear.sh
+        container: qc.lic_bumpy-wisteria-seahorse
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-pear-neanderthal.sh
-        container: qc.sty_hasty-olivine-lobster
+        - /usr/bin/env sh .sqa/script.snoopy-mauve-macaw.sh
+        container: qc.sty_bluesy-turquoise-nightingale
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-sangria-eleuth.sh
-        container: qc.ver_cheeky-aqua-dalmatian
+        - /usr/bin/env sh .sqa/script.wiggy-aquamarine-dragonfly.sh
+        container: qc.ver_thirsty-corn-harrier
 timeout: 5400
