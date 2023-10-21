@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-puce-forest.sh
-        container: qc.acc_cozy-lime-dollar
+        - /usr/bin/env sh .sqa/script.ready-razzmatazz-argentino.sh
+        container: qc.acc_woolly-rose-pinscher
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-red-chihuahua.sh
-        container: qc.doc_tasty-chocolate-lynx
+        - /usr/bin/env sh .sqa/script.skinny-cornflower-hornet.sh
+        container: qc.doc_sleepy-amaranth-havanese
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-celadon-bobcat.sh
-        container: qc.doc_goopy-dandelion-barnacle
+        - /usr/bin/env sh .sqa/script.frumpy-tomato-toucan.sh
+        container: qc.doc_goopy-lavender-deer
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-grey-gorilla.sh
-        container: qc.doc_whiny-sangria-spoonbill
+        - /usr/bin/env sh .sqa/script.homey-cream-hyrax.sh
+        container: qc.doc_stinky-alizarin-akbash
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-orange-goose.sh
-        container: qc.lic_skimpy-vermilion-wasp
+        - /usr/bin/env sh .sqa/script.squirrely-ruby-chimpanzee.sh
+        container: qc.lic_freaky-taupe-drever
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-mustard-butterfly.sh
-        container: qc.sty_snazzy-cyan-rottweiler
+        - /usr/bin/env sh .sqa/script.clammy-turquoise-mouse.sh
+        container: qc.sty_droopy-bronze-tuatara
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-ivory-wombat.sh
-        container: qc.ver_paltry-buff-snake
+        - /usr/bin/env sh .sqa/script.paltry-firebrick-audemer.sh
+        container: qc.ver_crabby-sangria-jaguar
 timeout: 5400
