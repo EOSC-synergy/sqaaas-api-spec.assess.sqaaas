@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-smalt-chin.sh
-        container: qc.acc_woolly-carmine-burmese
+        - /usr/bin/env sh .sqa/script.surly-puce-forest.sh
+        container: qc.acc_cozy-lime-dollar
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-wheat-vulture.sh
-        container: qc.doc_frumpy-linen-shrew
+        - /usr/bin/env sh .sqa/script.foggy-red-chihuahua.sh
+        container: qc.doc_tasty-chocolate-lynx
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-thistle-beagle.sh
-        container: qc.doc_wimpy-chestnut-bombay
+        - /usr/bin/env sh .sqa/script.gummy-celadon-bobcat.sh
+        container: qc.doc_goopy-dandelion-barnacle
       github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-auburn-husky.sh
-        container: qc.doc_blurry-denim-ocelot
+        - /usr/bin/env sh .sqa/script.geeky-grey-gorilla.sh
+        container: qc.doc_whiny-sangria-spoonbill
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-azure-koala.sh
-        container: qc.lic_stinky-linen-seal
+        - /usr/bin/env sh .sqa/script.queasy-orange-goose.sh
+        container: qc.lic_skimpy-vermilion-wasp
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-harlequin-gibbon.sh
-        container: qc.sty_scummy-alizarin-loon
+        - /usr/bin/env sh .sqa/script.gummy-mustard-butterfly.sh
+        container: qc.sty_snazzy-cyan-rottweiler
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-amber-mist.sh
-        container: qc.ver_sickly-sangria-donkey
+        - /usr/bin/env sh .sqa/script.pasty-ivory-wombat.sh
+        container: qc.ver_paltry-buff-snake
 timeout: 5400
