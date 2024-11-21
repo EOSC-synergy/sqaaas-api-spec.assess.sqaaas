@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-olivine-tapir.sh
-        container: qc.acc_wheezy-amaranth-corgi
+        - /usr/bin/env sh .sqa/script.jumpy-chocolate-emu.sh
+        container: qc.acc_wiggy-olive-toad
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-russet-wasp.sh
-        container: qc.doc_wiggy-mauve-eleuth
+        - /usr/bin/env sh .sqa/script.gamy-cream-ocelot.sh
+        container: qc.doc_freaky-pumpkin-elephant
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-jade-terrier.sh
-        container: qc.doc_muggy-harlequin-corgi
+        - /usr/bin/env sh .sqa/script.greasy-amethyst-liger.sh
+        container: qc.doc_cranky-chartreuse-gibbon
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-turquoise-dingo.sh
-        container: qc.doc_skanky-cinnabar-armadillo
+        - /usr/bin/env sh .sqa/script.frumpy-alizarin-civet.sh
+        container: qc.doc_seedy-myrtle-moose
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-amethyst-flamingo.sh
-        container: qc.lic_freaky-ivory-chicken
+        - /usr/bin/env sh .sqa/script.squeaky-platinum-bracke.sh
+        container: qc.lic_bluesy-pear-grasshopper
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-cerulean-yak.sh
-        container: qc.sty_muzzy-linen-balinese
+        - /usr/bin/env sh .sqa/script.bumpy-cyan-shark.sh
+        container: qc.sty_woozy-orchid-spitz
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-lime-bat.sh
-        container: qc.ver_thirsty-white-lizard
+        - /usr/bin/env sh .sqa/script.bumpy-tan-gar.sh
+        container: qc.ver_beady-linen-bullfrog
 timeout: 5400
