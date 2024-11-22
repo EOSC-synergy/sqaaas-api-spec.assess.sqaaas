@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-api-spec
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-salmon-lemur.sh
-        container: qc.acc_skimpy-cornflower-coati
+        - /usr/bin/env sh .sqa/script.hazy-grey-burmese.sh
+        container: qc.acc_hazy-chartreuse-grouse
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-peach-birman.sh
-        container: qc.doc_dorky-rust-dog
+        - /usr/bin/env sh .sqa/script.squeaky-pear-frise.sh
+        container: qc.doc_cozy-russet-tarantula
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-charcoal-goose.sh
-        container: qc.doc_dorky-pear-wildebeest
+        - /usr/bin/env sh .sqa/script.nerdy-olivine-manatee.sh
+        container: qc.doc_muzzy-sangria-chihuahua
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-sangria-chow.sh
-        container: qc.doc_scaly-emerald-starfish
+        - /usr/bin/env sh .sqa/script.stinky-alizarin-macaw.sh
+        container: qc.doc_wheezy-heliotrope-moorhen
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-cinnabar-akita.sh
-        container: qc.lic_seedy-chocolate-angelfish
+        - /usr/bin/env sh .sqa/script.hazy-bistre-whale.sh
+        container: qc.lic_scanty-charcoal-budgerigar
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-chartreuse-ladybird.sh
-        container: qc.sty_pokey-black-chinook
+        - /usr/bin/env sh .sqa/script.stealthy-rust-lobster.sh
+        container: qc.sty_muzzy-platinum-cat
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-taupe-crane.sh
-        container: qc.ver_cranky-tangerine-sheep
+        - /usr/bin/env sh .sqa/script.goopy-fuchsia-guppy.sh
+        container: qc.ver_grumpy-fuchsia-bongo
 timeout: 5400
