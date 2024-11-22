@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-chocolate-emu.sh
-        container: qc.acc_wiggy-olive-toad
+        - /usr/bin/env sh .sqa/script.geeky-salmon-lemur.sh
+        container: qc.acc_skimpy-cornflower-coati
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-cream-ocelot.sh
-        container: qc.doc_freaky-pumpkin-elephant
+        - /usr/bin/env sh .sqa/script.sickly-peach-birman.sh
+        container: qc.doc_dorky-rust-dog
       github.com/EOSC-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-amethyst-liger.sh
-        container: qc.doc_cranky-chartreuse-gibbon
+        - /usr/bin/env sh .sqa/script.trippy-charcoal-goose.sh
+        container: qc.doc_dorky-pear-wildebeest
       github.com/EOSC-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-alizarin-civet.sh
-        container: qc.doc_seedy-myrtle-moose
+        - /usr/bin/env sh .sqa/script.gloppy-sangria-chow.sh
+        container: qc.doc_scaly-emerald-starfish
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-platinum-bracke.sh
-        container: qc.lic_bluesy-pear-grasshopper
+        - /usr/bin/env sh .sqa/script.pokey-cinnabar-akita.sh
+        container: qc.lic_seedy-chocolate-angelfish
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-cyan-shark.sh
-        container: qc.sty_woozy-orchid-spitz
+        - /usr/bin/env sh .sqa/script.bluesy-chartreuse-ladybird.sh
+        container: qc.sty_pokey-black-chinook
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-spec get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-tan-gar.sh
-        container: qc.ver_beady-linen-bullfrog
+        - /usr/bin/env sh .sqa/script.tasty-taupe-crane.sh
+        container: qc.ver_cranky-tangerine-sheep
 timeout: 5400
