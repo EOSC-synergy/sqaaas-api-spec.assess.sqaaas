@@ -1543,10 +1543,10 @@
                 },
                 "silver": {
                     "to_fulfill": [
+                        "QC.Met",
                         "QC.Acc",
                         "QC.Lic",
                         "QC.Ver",
-                        "QC.Met",
                         "QC.Doc"
                     ],
                     "missing": [
@@ -1554,55 +1554,55 @@
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Ver",
                         "QC.Lic",
+                        "QC.Ver",
                         "QC.Doc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
+                        "QC.Met",
                         "QC.Acc",
+                        "QC.Lic",
                         "QC.Sec",
                         "QC.Uni",
-                        "QC.Lic",
-                        "QC.Ver",
                         "QC.Sty",
-                        "QC.Met",
+                        "QC.Ver",
                         "QC.Doc"
                     ],
                     "missing": [
+                        "QC.Met",
                         "QC.Sec",
-                        "QC.Uni",
-                        "QC.Met"
+                        "QC.Uni"
                     ],
                     "fulfilled": [
                         "QC.Acc",
                         "QC.Lic",
-                        "QC.Ver",
                         "QC.Sty",
+                        "QC.Ver",
                         "QC.Doc"
                     ]
                 }
             },
             "data": {
                 "entityType": "Assertion",
-                "entityId": "P72SyQ43RV2vjNhbYpxc9g",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/P72SyQ43RV2vjNhbYpxc9g",
-                "createdAt": "2025-01-06T11:04:58.295831257Z",
+                "entityId": "4RMWbdp2TgaM5CSxs2caGg",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/4RMWbdp2TgaM5CSxs2caGg",
+                "createdAt": "2025-01-24T10:07:35.456148142Z",
                 "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
                 "badgeclass": "UOmgyH_TSpSPXiro4aNBoQ",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ",
                 "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
                 "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
-                "image": "https://api.eu.badgr.io/public/assertions/P72SyQ43RV2vjNhbYpxc9g/image",
+                "image": "https://api.eu.badgr.io/public/assertions/4RMWbdp2TgaM5CSxs2caGg/image",
                 "recipient": {
-                    "identity": "sha256$3d801118b8a954692e5c0b4528960e10c4e935e6cf64ed7164fe90a3ccaa2567",
+                    "identity": "sha256$f4fd79bd932e812f2d87233ef64c7232e2ede797c59f842c2c0c2e0bbecf535b",
                     "hashed": true,
                     "type": "url",
-                    "salt": "rn3RvyP67kcXcwEr",
+                    "salt": "25rjimFmEJI5pi2d",
                     "plaintextIdentity": "https://github.com/EOSC-synergy/sqaaas-api-spec"
                 },
-                "issuedOn": "2025-01-06T11:04:58.295836412Z",
+                "issuedOn": "2025-01-24T10:07:35.456148654Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/EOSC-synergy/sqaaas-api-spec (commit: 753897df5160579660dabed1af7ef3d4853c836c, branch/tag: master)",
                 "evidence": [
                     {
@@ -1620,7 +1620,7 @@
                 "expires": null,
                 "extensions": {},
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/P72SyQ43RV2vjNhbYpxc9g"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/4RMWbdp2TgaM5CSxs2caGg"
                 },
                 "badgeRef": {
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ"
@@ -1632,10 +1632,10 @@
                 "source": "local",
                 "sourceUrl": null,
                 "originalJson": null,
-                "imagePath": "uploads/badges/assertion-P72SyQ43RV2vjNhbYpxc9g.png"
+                "imagePath": "uploads/badges/assertion-4RMWbdp2TgaM5CSxs2caGg.png"
             },
-            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/P72SyQ43RV2vjNhbYpxc9g?identity__url=https%3A//github.com/EOSC-synergy/sqaaas-api-spec.assess.sqaaas/commit/10f01c690f1d2176ad421bdca27cf8397e65d08f\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/P72SyQ43RV2vjNhbYpxc9g/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FP72SyQ43RV2vjNhbYpxc9g?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F10f01c690f1d2176ad421bdca27cf8397e65d08f&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F10f01c690f1d2176ad421bdca27cf8397e65d08f"
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/4RMWbdp2TgaM5CSxs2caGg?identity__url=https%3A//github.com/EOSC-synergy/sqaaas-api-spec.assess.sqaaas/commit/10f01c690f1d2176ad421bdca27cf8397e65d08f\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/4RMWbdp2TgaM5CSxs2caGg/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2F4RMWbdp2TgaM5CSxs2caGg?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F10f01c690f1d2176ad421bdca27cf8397e65d08f&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fsqaaas-api-spec.assess.sqaaas%2Fcommit%2F10f01c690f1d2176ad421bdca27cf8397e65d08f"
         }
     }
 }
